@@ -6,9 +6,14 @@ const [age, setAge] = useState(0)
 
 const givePermision =() =>{ 
 
-if(age >= 18){
+if(age > 18){
     
     return "Puede Entrar"
+
+}
+else if(age === 18){
+
+    return "Estas en el Limite"
 
 }
 else {
