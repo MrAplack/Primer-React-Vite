@@ -17,7 +17,7 @@ export default function MyRoutes() {
 
             <ArbolRutas>
                 <Route path="/" element={<Home />} />
-                <Route path="/contactos" element={<Contact />} />
+                <Route path="/Contact" element={<Contact />} />
                 <Route path="*" element={<NotFound />} />
             </ArbolRutas>
 

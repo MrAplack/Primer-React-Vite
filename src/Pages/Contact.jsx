@@ -2,7 +2,7 @@ export default function Contact() {
 
     return (
 
-        <h1>Contact desde componente</h1>
+        <h1>Contactos desde componente</h1>
 
     )
 
