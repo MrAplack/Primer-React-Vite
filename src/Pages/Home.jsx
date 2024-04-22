@@ -17,7 +17,7 @@ export default function Home() {
     }
     const getTasks = async () => {
 
-        const response = await fetch("https://api-tasks.vercel.app/api/tasks")
+        const response = await fetch("http://localhost:3000/tasks")
 
         const data = await response.json()
 
@@ -39,7 +39,7 @@ export default function Home() {
 
     const deleteTaskById = async (id) => {
 
-        const response = await fetch(`https://api-tasks.vercel.app/api/task/${id}`, { method: "delete" })
+        const response = await fetch(`http://localhost:3000/task/${id}`, { method: "delete" })
 
 
 
@@ -83,7 +83,7 @@ export default function Home() {
 
     const createTask = async () => {
 
-        const response = await fetch("https://api-tasks.vercel.app/api/task", {
+        const response = await fetch("http://localhost:3000/task", {
 
             method: "post",
             headers: {
