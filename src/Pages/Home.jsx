@@ -17,7 +17,7 @@ export default function Home() {
     }
     const getTasks = async () => {
 
-        const response = await fetch("http://localhost:3000/tasks")
+        const response = await fetch("https://mi-primera-api-xi.vercel.app/tasks")
 
         const data = await response.json()
 
@@ -39,7 +39,7 @@ export default function Home() {
 
     const deleteTaskById = async (id) => {
 
-        const response = await fetch(`http://localhost:3000/task/${id}`, { method: "delete" })
+        const response = await fetch(`https://mi-primera-api-xi.vercel.app/task/${id}`, { method: "delete" })
 
 
 
@@ -83,7 +83,7 @@ export default function Home() {
 
     const createTask = async () => {
 
-        const response = await fetch("http://localhost:3000/task", {
+        const response = await fetch("https://mi-primera-api-xi.vercel.app/task", {
 
             method: "post",
             headers: {
